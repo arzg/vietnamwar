@@ -1,9 +1,11 @@
 $serif-fonts: "portada", "Charter", "Georgia", "Times New Roman", serif;
 $sans-fonts: "adelle-sans", system-ui;
 
+$leading-ratio: 1.4;
+
 body {
   font-family: $serif-fonts;
-  line-height: 1.4;
+  line-height: $leading-ratio;
 }
 
 h1 {
@@ -14,4 +16,11 @@ h1 {
     top: 8rem;
     bottom: 4rem;
   }
+}
+
+// Replace space between paragraphs with an indent the size of the leading,
+// ensuring the space created by the indent is a square.
+body p + p {
+  margin-top: 0;
+  text-indent: #{$leading-ratio}em;
 }
