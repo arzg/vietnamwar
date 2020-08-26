@@ -1,0 +1,107 @@
+@mixin font-face($family, $url, $style, $weight) {
+  @font-face {
+    font-family: $family;
+    src: url($url) format("woff2");
+    font-display: swap;
+    font-style: $style;
+    font-weight: $weight;
+  }
+}
+
+@include font-face(
+  "adelle-sans",
+  "https://use.typekit.net/af/ed1f0a/00000000000000003b9b47cc/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3",
+  normal,
+  400
+);
+
+@include font-face(
+  "adelle-sans",
+  "https://use.typekit.net/af/2b8fc1/00000000000000003b9b47cb/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3",
+  italic,
+  400
+);
+
+@include font-face(
+  "adelle-sans",
+  "https://use.typekit.net/af/49db71/00000000000000003b9b47cf/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3",
+  normal,
+  700
+);
+
+@include font-face(
+  "adelle-sans",
+  "https://use.typekit.net/af/bca06f/00000000000000003b9b47d0/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3",
+  italic,
+  700
+);
+
+@include font-face(
+  "adelle-sans",
+  "https://use.typekit.net/af/d15e3d/00000000000000003b9b47d1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3",
+  normal,
+  800
+);
+
+@include font-face(
+  "adelle-sans",
+  "https://use.typekit.net/af/41f18e/00000000000000003b9b47d2/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3",
+  italic,
+  800
+);
+
+@include font-face(
+  "portada",
+  "https://use.typekit.net/af/d9f927/00000000000000003b9aea7a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3",
+  normal,
+  400
+);
+
+@include font-face(
+  "portada",
+  "https://use.typekit.net/af/e14e13/00000000000000003b9aea7b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3",
+  italic,
+  400
+);
+
+@include font-face(
+  "portada",
+  "https://use.typekit.net/af/880788/00000000000000003b9aea7e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3",
+  italic,
+  700
+);
+
+@include font-face(
+  "portada",
+  "https://use.typekit.net/af/411fb3/00000000000000003b9aea7f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3",
+  normal,
+  700
+);
+
+@include font-face(
+  "portada-text",
+  "https://use.typekit.net/af/4e178e/00000000000000003b9aea85/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3",
+  normal,
+  400
+);
+
+@include font-face(
+  "portada-text",
+  "https://use.typekit.net/af/babb90/00000000000000003b9aea86/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3",
+  italic,
+  400
+);
+
+@include font-face(
+  "portada-text",
+  "https://use.typekit.net/af/18a853/00000000000000003b9aea89/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3",
+  normal,
+  700
+);
+
+@include font-face(
+  "portada-text",
+  "https://use.typekit.net/af/e53935/00000000000000003b9aea8a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3",
+  italic,
+  700
+);
