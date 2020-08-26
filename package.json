@@ -1,0 +1,18 @@
+{
+  "name": "vietnamwar",
+  "version": "0.0.1",
+  "private": true,
+  "description": "A website about the Vietnam War",
+  "scripts": {
+    "start": "hugo server --minify"
+  },
+  "browserslist": [
+    "> 1% in AU"
+  ],
+  "devDependencies": {
+    "cssnano": "4",
+    "postcss-cli": "7",
+    "postcss-preset-env": "6",
+    "postcss-sorting": "5"
+  }
+}

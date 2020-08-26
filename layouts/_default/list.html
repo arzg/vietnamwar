@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+
+<head>
+  {{ partial "head" . }}
+</head>
+
+<body>
+  {{ range .Pages }}
+  <a href="{{ .Permalink }}">{{ .Title }}</a>
+  {{ end }}
+</body>
+
+</html>
