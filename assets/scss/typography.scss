@@ -1,0 +1,17 @@
+$serif-fonts: "portada", "Charter", "Georgia", "Times New Roman", serif;
+$sans-fonts: "adelle-sans", system-ui;
+
+body {
+  font-family: $serif-fonts;
+  line-height: 1.4;
+}
+
+h1 {
+  font-family: $sans-fonts;
+  font-size: 3rem;
+  font-weight: 800;
+  margin: {
+    top: 8rem;
+    bottom: 4rem;
+  }
+}
