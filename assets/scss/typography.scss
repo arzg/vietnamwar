@@ -6,6 +6,10 @@ $leading-ratio: 1.45;
 body {
   font-family: $serif-fonts;
   line-height: $leading-ratio;
+
+  @media (prefers-color-scheme: dark) {
+    -webkit-font-smoothing: antialiased;
+  }
 }
 
 h1 {
