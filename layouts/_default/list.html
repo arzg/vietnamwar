@@ -6,6 +6,8 @@
 </head>
 
 <body>
+  <h1>{{ .Title }}</h1>
+
   {{ range .Pages }}
   <a href="{{ .Permalink }}">{{ .Title }}</a>
   {{ end }}
