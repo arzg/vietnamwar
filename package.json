@@ -4,7 +4,7 @@
   "private": true,
   "description": "A website about the Vietnam War",
   "scripts": {
-    "start": "hugo server --minify"
+    "start": "hugo server --minify --baseURL http://localhost"
   },
   "browserslist": [
     "> 1% in AU"
