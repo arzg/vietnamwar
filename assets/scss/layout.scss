@@ -4,7 +4,7 @@ $aside-width: 10rem;
 $aside-gutter: 1rem;
 
 body {
-  max-width: $textblock-width + $aside-width + $aside-gutter;
+  max-width: $textblock-width + $aside-width + $aside-gutter + $page-padding * 2;
   margin: {
     left: auto;
     right: auto;
