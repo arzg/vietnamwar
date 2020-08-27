@@ -32,7 +32,20 @@ body * + * {
 aside {
   font-size: 0.9rem;
   font-style: italic;
-  opacity: 0.5;
+}
+
+// These styles only apply when the page cannot fit asides.
+@media (max-width: $page-width-with-asides) {
+  aside {
+    padding: 1em;
+    opacity: 0.8;
+    border-left: 2px solid #00000099;
+
+    background-color: #00000018;
+    @media (prefers-color-scheme: dark) {
+      background-color: #00000044;
+    }
+  }
 }
 
 // Only style asides to be beside the textblock if the screen is wide enough.
@@ -41,6 +54,8 @@ aside {
     position: absolute;
     right: 0;
     width: $aside-width;
+
+    opacity: 0.5;
   }
   // This ensures that the `right: 0` is relative to main’s position.
   main {
