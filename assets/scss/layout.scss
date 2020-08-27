@@ -1,3 +1,4 @@
+$page-padding: 1rem;
 $textblock-width: 36rem;
 $aside-width: 10rem;
 $aside-gutter: 1rem;
@@ -8,7 +9,7 @@ body {
     left: auto;
     right: auto;
   }
-  padding: 1rem;
+  padding: $page-padding;
 }
 
 main {
