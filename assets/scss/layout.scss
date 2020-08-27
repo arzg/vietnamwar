@@ -2,9 +2,16 @@ $page-padding: 2rem;
 $textblock-width: 30rem;
 $aside-width: 10rem;
 $aside-gutter: 1rem;
+$page-width-with-asides: $textblock-width + $aside-width + $aside-gutter + $page-padding * 2;
+$page-width-without-asides: $textblock-width + $page-padding * 2;
 
 body {
-  max-width: $textblock-width + $aside-width + $aside-gutter + $page-padding * 2;
+  max-width: $page-width-with-asides;
+
+  @media (max-width: $page-width-with-asides) {
+    max-width: $page-width-without-asides;
+  }
+
   margin: {
     left: auto;
     right: auto;
@@ -13,19 +20,24 @@ body {
 }
 
 main {
-  padding-right: $aside-width + $aside-gutter;
+  @media not all and (max-width: $page-width-with-asides) {
+    padding-right: $aside-width + $aside-gutter;
+  }
 }
 
 body * + * {
   margin-top: 1em;
 }
 
-aside {
-  position: absolute;
-  right: 0;
-  width: $aside-width;
-}
-// This ensures that the `right: 0` is relative to main’s position.
-main {
-  position: relative;
+// Only style asides to be beside the textblock if the screen is wide enough.
+@media not all and (max-width: $page-width-with-asides) {
+  aside {
+    position: absolute;
+    right: 0;
+    width: $aside-width;
+  }
+  // This ensures that the `right: 0` is relative to main’s position.
+  main {
+    position: relative;
+  }
 }
