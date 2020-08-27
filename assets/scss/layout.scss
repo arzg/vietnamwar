@@ -29,6 +29,12 @@ body * + * {
   margin-top: 1em;
 }
 
+aside {
+  font-size: 0.9rem;
+  font-style: italic;
+  opacity: 0.5;
+}
+
 // Only style asides to be beside the textblock if the screen is wide enough.
 @media not all and (max-width: $page-width-with-asides) {
   aside {
