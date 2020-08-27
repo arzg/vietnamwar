@@ -6,3 +6,9 @@
   padding: 0;
   text-decoration: inherit;
 }
+
+// Without this some mobile browsers (e.g. iOS Safari) will automatically scale
+// font size, disrespecting our own behaviour.
+body {
+  text-size-adjust: 100%;
+}
