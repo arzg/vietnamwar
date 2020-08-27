@@ -4,13 +4,15 @@
 {{ partial "head" . }}
 
 <body>
-  {{ partial "nav" . }}
+  <main>
+    {{ partial "nav" . }}
 
-  <h1>{{ .Title }}</h1>
+    <h1>{{ .Title }}</h1>
 
-  {{ range .Pages }}
-  <a href="{{ .Permalink }}">{{ .Title }}</a>
-  {{ end }}
+    {{ range .Pages }}
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    {{ end }}
+  </main>
 </body>
 
 </html>

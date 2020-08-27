@@ -1,5 +1,9 @@
+$textblock-width: 36rem;
+$aside-width: 10rem;
+$aside-gutter: 1rem;
+
 body {
-  max-width: 36rem;
+  max-width: $textblock-width + $aside-width + $aside-gutter;
   margin: {
     left: auto;
     right: auto;
@@ -7,13 +11,20 @@ body {
   padding: 1rem;
 }
 
+main {
+  padding-right: $aside-width + $aside-gutter;
+}
+
 body * + * {
   margin-top: 1em;
 }
 
 aside {
-  left: 0;
   position: absolute;
-  text-align: right;
-  width: 10rem;
+  right: 0;
+  width: $aside-width;
+}
+// This ensures that the `right: 0` is relative to main’s position.
+main {
+  position: relative;
 }
