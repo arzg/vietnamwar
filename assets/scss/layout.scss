@@ -10,3 +10,10 @@ body {
 body * + * {
   margin-top: 1em;
 }
+
+aside {
+  left: 0;
+  position: absolute;
+  text-align: right;
+  width: 10rem;
+}
