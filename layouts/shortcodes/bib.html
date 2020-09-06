@@ -1,0 +1,11 @@
+{{ $title := .Get "title" }}
+{{ $author := .Get "author" }}
+{{ $year := .Get "year" }}
+{{ $url := .Get "url" }}
+{{ $viewDate := .Get "viewDate" }}
+
+{{ $author }}.
+{{ $title}}.
+{{ $year }}.
+Available at <a href="{{ $url }}">{{ $url }}</a>
+(viewed on {{ dateFormat "2 January 2006" $viewDate }})
