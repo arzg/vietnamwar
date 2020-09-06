@@ -22,3 +22,10 @@ h1 {
     bottom: 4rem;
   }
 }
+
+// Stop long links from overflowing by breaking them inbetween words, using
+// hyphens where necessary.
+a {
+  hyphens: auto;
+  word-break: break-all;
+}
