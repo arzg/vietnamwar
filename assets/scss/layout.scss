@@ -26,7 +26,7 @@ main {
 }
 
 body * + * {
-  margin-top: 1em;
+  margin-top: #{$leading-ratio}em;
 }
 
 aside {
@@ -56,7 +56,7 @@ aside {
     width: $aside-width;
 
     // Visually align aside with the text next to it.
-    margin-top: 1.1rem;
+    margin-top: #{$leading-ratio * 1.3}em;
 
     opacity: 0.4;
   }
