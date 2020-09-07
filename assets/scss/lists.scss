@@ -1,0 +1,11 @@
+$bullet-to-list-content-gap: #{$leading-ratio}em;
+
+ul li {
+  margin-left: $bullet-to-list-content-gap;
+
+  &:before {
+    content: "•";
+    position: absolute;
+    margin-left: -$bullet-to-list-content-gap;
+  }
+}
