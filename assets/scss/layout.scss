@@ -69,12 +69,4 @@ blockquote {
   font-style: italic;
   border-left: 1px solid;
   padding-left: 1rem;
-
-  ::before {
-    content: "‘";
-  }
-
-  ::after {
-    content: "’";
-  }
 }
