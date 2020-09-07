@@ -1,5 +1,9 @@
 $bullet-to-list-content-gap: #{$leading-ratio}em;
 
+li + li {
+  margin-top: #{$leading-ratio / 2}em;
+}
+
 ul li {
   margin-left: $bullet-to-list-content-gap;
 
