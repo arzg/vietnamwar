@@ -1,8 +1,3 @@
-$serif-fonts: "portada-text", "Charter", "Georgia", "Times New Roman", serif;
-$sans-fonts: "adelle-sans", system-ui;
-
-$leading-ratio: 1.6;
-
 body {
   font-family: $serif-fonts;
   line-height: $leading-ratio;

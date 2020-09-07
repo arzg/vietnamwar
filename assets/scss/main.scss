@@ -1,6 +1,11 @@
+$serif-fonts: "portada-text", "Charter", "Georgia", "Times New Roman", serif;
+$sans-fonts: "adelle-sans", system-ui;
+
+$leading-ratio: 1.6;
+
 @import "reset";
-@import "typography";
 @import "layout";
+@import "typography";
 @import "fonts";
 @import "color";
 @import "lists";
