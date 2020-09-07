@@ -74,4 +74,13 @@ blockquote {
 img {
   width: 100%;
   height: auto;
+
+  @media (prefers-color-scheme: dark) {
+    opacity: 0.7;
+    transition: 350ms opacity ease-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
