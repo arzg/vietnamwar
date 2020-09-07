@@ -1,3 +1,6 @@
 baseURL = "https://arzg.github.io/vietnamwar"
 languageCode = "en-uk"
 title = "The Vietnam War"
+
+[markup.goldmark.renderer]
+unsafe = true
