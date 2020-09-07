@@ -26,7 +26,7 @@ main {
 }
 
 body * + * {
-  margin-top: #{$leading-ratio}em;
+  margin-top: #{$leading-ratio}rem;
 }
 
 aside {
@@ -37,7 +37,7 @@ aside {
 // These styles only apply when the page cannot fit asides.
 @media (max-width: $page-width-with-asides) {
   aside {
-    padding: 1em;
+    padding: 1rem;
     opacity: 0.8;
     border-left: 2px solid #00000099;
 

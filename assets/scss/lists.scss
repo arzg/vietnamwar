@@ -1,7 +1,7 @@
-$bullet-to-list-content-gap: #{$leading-ratio}em;
+$bullet-to-list-content-gap: #{$leading-ratio}rem;
 
 li + li {
-  margin-top: #{$leading-ratio / 2}em;
+  margin-top: #{$leading-ratio / 2}rem;
 }
 
 ul li {
