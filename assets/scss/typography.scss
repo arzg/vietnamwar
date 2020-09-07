@@ -24,9 +24,9 @@ h1 {
   }
 }
 
-// Stop long links from overflowing by breaking them inbetween words, using
+// Stop long URLs from overflowing by breaking them inbetween words, using
 // hyphens where necessary.
-a {
+.url {
   hyphens: auto;
   word-break: break-all;
 }
