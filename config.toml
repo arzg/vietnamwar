@@ -1,6 +1,6 @@
 baseURL = "https://arzg.github.io/vietnamwar"
 languageCode = "en-uk"
-title = "The Vietnam War"
+title = "Walter Cronkite in The Vietnam War"
 
 [markup]
 defaultMarkdownHandler = "blackfriday"
